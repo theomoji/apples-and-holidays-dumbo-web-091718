@@ -85,10 +85,12 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists include the string "BBQ"
-  holiday_hash.select{|key, hash| hash[]}
+  holiday_hash.key("BBQ")
 end
 
-
+# hash = { "a" => 100, "b" => 200, "c" => 300, "d" => 300 }
+# hash.key(200)   #=> "b"
+# hash.key(300)   #=> "c"
 # clients.select{|key, hash| hash["client_id"] == "2180" }
 
 
