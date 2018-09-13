@@ -84,6 +84,7 @@ end
 #call ruby lib/holiday.rb
 
 def all_holidays_with_bbq(holiday_hash)
+  # Write a method to collect all holidays with BBQ
   # return an array of holiday names (as symbols) where supply lists include the string "BBQ"
   holiday_hash.key("BBQ")
 end
